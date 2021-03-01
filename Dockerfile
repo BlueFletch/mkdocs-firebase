@@ -5,6 +5,9 @@ LABEL maintainer="Bluefletch" version="0.1.0"
 
 COPY requirements.txt ./
 
+# Install git
+RUN apk --no-cache add git
+
 # MkDocs Material
 RUN \
     apk add --update \
